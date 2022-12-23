@@ -164,11 +164,12 @@
 .modal__link {
     color: $accentColor;
 }
-.modal__button--centered {
-    text-align:center;
-}
 .modal__button {
     cursor: pointer;
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    translate: -50% 0%;
     width: 200px;
     height: 50px;
     color: #fff;
@@ -181,7 +182,6 @@
     border-style: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: $transDur $transTime;
-    margin: 0;
 
     &:hover,
     &:focus {

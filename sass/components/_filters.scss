@@ -1,11 +1,11 @@
-.portfolio__filters {
+.filter {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
     margin-bottom: 34px;
-}
-.portfolio__filter-button {
+
+    &__button {
     background-color: #F5F4FA;
     font-size:16px;
     line-height: 1.8;
@@ -36,4 +36,5 @@
     color: #fff;
     transition: $transDur $transTime;
     }
+}
 }

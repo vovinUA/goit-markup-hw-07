@@ -3,21 +3,3 @@
     align-items: center;
     gap: 10px;
 }
-.footer__social-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    fill: #fff;
-    transition: $transDur $transTime;
-
-    &:hover, 
-    &:focus {
-    background-color: $accentColor;
-    transition: $transDur $transTime;
-    }
-}

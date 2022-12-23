@@ -21,7 +21,7 @@
                     <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="nav nav__space">
+            <ul class="nav nav--space">
                 <li class="nav__item">
                     <a href="mailto:info@devstudio.com" class="nav__link--rigth ">
                         <svg width="16" height="12" class="nav__icon">
@@ -42,12 +42,12 @@
             <div class="container">
                 <h2 class="section__title visually-hidden">Наші роботи</h2>
                 <div>
-                    <ul class="portfolio__filters">
-                        <li><button type="button" class="portfolio__filter-button--active portfolio__filter-button--first">Усі</button></li>
-                        <li><button type="button" class="portfolio__filter-button">Веб-сайти</button></li>
-                        <li><button type="button" class="portfolio__filter-button">Додатки</button></li>
-                        <li><button type="button" class="portfolio__filter-button">Дизайн</button></li>
-                        <li><button type="button" class="portfolio__filter-button">Маркетинг</button></li>
+                    <ul class="filter">
+                        <li><button type="button" class="filter__button--active filter__button--first">Усі</button></li>
+                        <li><button type="button" class="filter__button">Веб-сайти</button></li>
+                        <li><button type="button" class="filter__button">Додатки</button></li>
+                        <li><button type="button" class="filter__button">Дизайн</button></li>
+                        <li><button type="button" class="filter__button">Маркетинг</button></li>
                     </ul>
                 </div>
                 <ul class="portfolio">
@@ -179,32 +179,32 @@
                     </address>
                 </div>
                 <div class="footer-2">
-                    <h3 class="team__title"><span class="logo__accent--bottom uppercase">Приєднуйтесь</span></h3>
+                    <p class="team__title"><span class="logo__accent--bottom uppercase">Приєднуйтесь</span></p>
                     <ul class="footer-socials">
                         <li> 
-                            <a href="" class="footer__social-item">
-                                <svg class="social-icon">
+                            <a href="" class="social__link--footer">
+                                <svg class="social__icon">
                                     <use href="./images/icons.svg#social-insta"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="footer__social-item">
-                                <svg class="social-icon">
+                            <a href="" class="social__link--footer">
+                                <svg class="social__icon">
                                     <use href="./images/icons.svg#social-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="footer__social-item">
-                                <svg class="social-icon">
+                            <a href="" class="social__link--footer">
+                                <svg class="social__icon">
                                     <use href="./images/icons.svg#social-fb"></use>
                                 </svg>
                              </a>
                         </li>
                         <li>
-                            <a href="" class="footer__social-item">
-                                <svg class="social-icon">
+                            <a href="" class="social__link--footer">
+                                <svg class="social__icon">
                                     <use href="./images/icons.svg#social-linked"></use>
                                 </svg>
                             </a>
@@ -212,9 +212,9 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="team__title"><span class="logo__accent--bottom uppercase">Підпишіться на розсилку</span></h3>
-                    <form name="footer-newsletter" autocomplete="off">
-                        <div class="newsletter__form">
+                    <p class="team__title"><span class="logo__accent--bottom uppercase">Підпишіться на розсилку</span></p>
+                    <form name="newsletter" autocomplete="off">
+                        <div class="newsletter">
                             <input type="email" name="email" class="newsletter__input" placeholder="E-mail" />
                             <button type="submit" class="newsletter__button">Підписатися
                                 <svg width="24" height="24" class="newsletter__icon">

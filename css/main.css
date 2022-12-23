@@ -81,12 +81,6 @@ ol, ul {
   fill: currentColor;
 }
 
-.social-icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-}
-
 .header {
   border-style: none;
   border-width: 1px;
@@ -167,7 +161,7 @@ ol, ul {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__space {
+.nav--space {
   margin-left: auto;
 }
 
@@ -387,12 +381,12 @@ ol, ul {
   color: #2196F3;
 }
 
-.modal__button--centered {
-  text-align: center;
-}
-
 .modal__button {
   cursor: pointer;
+  position: absolute;
+  bottom: 47px;
+  left: 50%;
+  translate: -50% 0%;
   width: 200px;
   height: 50px;
   color: #fff;
@@ -405,7 +399,6 @@ ol, ul {
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 0;
 }
 .modal__button:hover, .modal__button:focus {
   background-color: #188CE8;
@@ -442,7 +435,7 @@ ol, ul {
   line-height: 1.7;
 }
 
-.section-features {
+.section--features {
   padding-bottom: 0px;
 }
 
@@ -462,11 +455,10 @@ ol, ul {
   width: 100%;
 }
 
-.team {
+.section--team {
   background-color: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
+
 .team__card {
   background-color: #fff;
   border-bottom-right-radius: 4px;
@@ -492,15 +484,14 @@ ol, ul {
   line-height: 1.19;
 }
 
-.team__socials {
-  display: inline-flex;
+.social {
+  display: flex;
   margin-top: 16px;
   margin-left: 32px;
   margin-right: 32px;
   gap: 10px;
 }
-
-.team__social-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -511,10 +502,31 @@ ol, ul {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #AFB1B8;
 }
-.team__social-link:hover, .team__social-link:focus {
+.social__link:hover, .social__link:focus {
   background-color: #2196F3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #fff;
+}
+.social__link--footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  fill: #fff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__link--footer:hover, .social__link--footer:focus {
+  background-color: #2196F3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 .client__link {
@@ -550,15 +562,14 @@ ol, ul {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__filters {
+.filter {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   margin-bottom: 34px;
 }
-
-.portfolio__filter-button {
+.filter__button {
   background-color: #F5F4FA;
   font-size: 16px;
   line-height: 1.8;
@@ -570,7 +581,7 @@ ol, ul {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.portfolio__filter-button--active {
+.filter__button--active {
   background-color: #2196F3;
   font-size: 16px;
   line-height: 1.8;
@@ -580,10 +591,10 @@ ol, ul {
   color: #fff;
   cursor: pointer;
 }
-.portfolio__filter-button--first {
+.filter__button--first {
   padding: 6px 25px;
 }
-.portfolio__filter-button:hover, .portfolio__filter-button:focus {
+.filter__button:hover, .filter__button:focus {
   background-color: #2196F3;
   color: #fff;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -710,28 +721,10 @@ ol, ul {
   gap: 10px;
 }
 
-.footer__social-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  fill: #fff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__social-item:hover, .footer__social-item:focus {
-  background-color: #2196F3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.newsletter__form {
+.newsletter {
   display: flex;
   align-items: center;
 }
-
 .newsletter__input {
   outline: none;
   margin: 0px;
@@ -750,7 +743,6 @@ ol, ul {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .newsletter__button {
   cursor: pointer;
   display: inline-flex;
@@ -769,7 +761,6 @@ ol, ul {
   box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
   background-color: #2196F3;
 }
-
 .newsletter__icon {
   width: 24px;
   height: 24px;

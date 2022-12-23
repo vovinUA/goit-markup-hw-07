@@ -1,0 +1,23 @@
+.nav__link--rigth {
+    display: inline-flex;
+    align-items: center;
+    color: $textColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: $transDur $transTime;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+        fill: $accentColor;
+        transition: $transDur $transTime;
+    }
+}
+.nav__space {
+    margin-left: auto;
+}
+.nav__icon {
+    margin-right: 10px;
+}

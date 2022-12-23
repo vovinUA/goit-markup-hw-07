@@ -1,0 +1,19 @@
+.footer {
+    background-color: $accentBg;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-blocks {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+.footer-2 {
+    margin-right: 23px;
+}
+.uppercase {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+}

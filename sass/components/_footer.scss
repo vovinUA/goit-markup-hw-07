@@ -2,14 +2,15 @@
     background-color: $accentBg;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    &--spacing {
+        margin-right: 23px;
+    }
 }
 .footer-blocks {
     display: flex;
     align-items: baseline;
     gap: 70px;
-}
-.footer-2 {
-    margin-right: 23px;
 }
 .uppercase {
     text-transform: uppercase;

@@ -664,15 +664,14 @@ ol, ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer--spacing {
+  margin-right: 23px;
+}
 
 .footer-blocks {
   display: flex;
   align-items: baseline;
   gap: 70px;
-}
-
-.footer-2 {
-  margin-right: 23px;
 }
 
 .uppercase {

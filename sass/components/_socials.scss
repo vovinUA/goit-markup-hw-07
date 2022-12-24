@@ -1,5 +1,6 @@
 .social {
     display: flex;
+    align-items: center;
     margin-top: 16px;
     margin-left: 32px;
     margin-right: 32px;
@@ -47,4 +48,7 @@
         height:20px;
     }
 
+}
+.social--footer {
+    margin: 0px;
 }

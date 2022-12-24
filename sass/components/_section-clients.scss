@@ -1,4 +1,5 @@
-.client__link {
+.client {
+    &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,8 +21,8 @@
     fill: $accentColor;
     transition: $transDur $transTime;
     }
-}
-.icon-client {
+    }
+    &__icon {
     fill: $iconColor;
     display: block;
     width: 106px;
@@ -33,4 +34,5 @@
     fill: $accentColor;
     transition: $transDur $transTime;
     }
+}
 }
